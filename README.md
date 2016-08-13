@@ -11,7 +11,7 @@ It extends ```ScrollComponent``` and ```ScrollComponent.updateContent()``` metho
 Create and setup a ListComponent like you would a ScrollComponent, then just add and remove sublayers to see it working.
 
 ```
-{ListComponent} = require "listcomponent"
+{ListComponent} = require "ListComponent"
 
 myList = new ListComponent
 

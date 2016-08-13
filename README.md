@@ -18,19 +18,19 @@ myList = new ListComponent
 listItem1 = new Layer
   width: Screen.width
   height: 200
-  background: Utils.randomColor()
+  backgroundColor: Utils.randomColor()
 
 listItem2 = new Layer
   width: Screen.width
   height: 200
-  background: Utils.randomColor()
+  backgroundColor: Utils.randomColor()
 
 listItem3 = new Layer
   width: Screen.width
   height: 200
-  background: Utils.randomColor()
+  backgroundColor: Utils.randomColor()
   
-myList.addSubLayer listItem1
-myList.addSubLayer listItem2
-myList.addSubLayer listItem3
+myList.content.addSubLayer listItem1
+myList.content.addSubLayer listItem2
+myList.content.addSubLayer listItem3
 ```

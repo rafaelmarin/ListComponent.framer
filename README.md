@@ -30,7 +30,7 @@ listItem3 = new Layer
   height: 200
   background: Utils.randomColor()
   
-myList.addSublayer listItem1
-myList.addSublayer listItem2
-myList.addSublayer listItem3
+myList.addSubLayer listItem1
+myList.addSubLayer listItem2
+myList.addSubLayer listItem3
 ```

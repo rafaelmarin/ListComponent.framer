@@ -20,27 +20,25 @@ listItem1 = new Layer
   height: 200
   backgroundColor: Utils.randomColor()
   html: "Item 1"
+  parent: myList.content
 
 listItem2 = new Layer
   width: Screen.width
   height: 200
   backgroundColor: Utils.randomColor()
   html: "Item 2"
+  parent: myList.content
 
 listItem3 = new Layer
   width: Screen.width
   height: 200
   backgroundColor: Utils.randomColor()
   html: "Item 3"
+  parent: myList.content
   
 listItem1.onTap -> @destroy()
 listItem2.onTap -> @destroy()
 listItem3.onTap -> @destroy()
-
-myList.content.addSubLayer listItem1
-myList.content.addSubLayer listItem2
-myList.content.addSubLayer listItem3
-
 ```
 
 ## ListGroup

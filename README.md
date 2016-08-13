@@ -4,6 +4,9 @@ ListComponent is a [Framer](http://github.com/koenbok/Framer) component that hel
 # How to install
 As with any other module, just drag the file to your Framer project's ```modules/``` folder, then import the module in your Framer prototype by adding ```{ListComponent} = require "ListComponent"``` to your source code.
 
+# Example
+[Shopping List](http://share.framerjs.com/48ksc53cmq7i/)
+
 # Basic usage
 Create and setup a ListComponent like you would a ScrollComponent, then just add and remove sublayers to see it working.
 
@@ -41,7 +44,7 @@ myList.content.addSubLayer listItem3
 ```
 
 # ListGroup
-Sometimes you'll want to divide your list of items into subgroups, and that's what ListGroups are. They are basically Framer Layers that will also resize according to the the lenght of their children. Here's an example: 
+Sometimes you'll want to divide your list of items into subgroups, and that's what ListGroups are. They are basically Framer Layers that will also resize according to the the lenght of their children. Here's the source code forfor the [Shopping List](http://share.framerjs.com/48ksc53cmq7i/) example: 
 
 ```
 {ListComponent} = require "ListComponent"

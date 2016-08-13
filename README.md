@@ -59,7 +59,7 @@ shoppingList = new ListComponent
 # First ListGroup
 
 fruits = new ListGroup
-shoppingList.content.addSubLayer fruits
+	parent: shoppingList.content
 
 fruitsTitle = new Layer
 	parent: fruits
@@ -81,7 +81,7 @@ for fruit in ["Apple", "Banana", "Orange"]
 # Second ListGroup	
 
 grains = new ListGroup
-shoppingList.content.addSubLayer grains
+	parent: shoppingList.content
 
 grainsTitle = new Layer
 	parent: grains

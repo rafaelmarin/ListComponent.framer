@@ -48,53 +48,52 @@ Sometimes you'll want to divide your list of items into subgroups, and that's wh
 {ListGroup} = require "ListComponent"
 
 # creates the list
-myList = new ListComponent
+shoppingList = new ListComponent
 
 
 # groups are sublayers in side the list component that group other layers. They help you subdivide your scrolling list without having to recalculate 
 
+# First ListGroup
 
-groupA = new ListGroup
-myList.content.addSubLayer groupA
+fruits = new ListGroup
+shoppingList.content.addSubLayer fruits
 
-groupB = new ListGroup
-myList.content.addSubLayer groupB
+fruitsTitle = new Layer
+	parent: fruits
+	html: "Fruits"
+	width: Screen.width
+	backgroundColor: "black"
+	height: 100
+
+for fruit in ["Apple", "Banana", "Orange"]
+	f = new Layer
+		parent: fruits
+		width: Screen.width
+		height: 150
+		backgroundColor: Utils.randomColor()
+		html: fruit
+	f.onTap -> @destroy()
+	
+
+# Second ListGroup	
+
+grains = new ListGroup
+shoppingList.content.addSubLayer grains
+
+grainsTitle = new Layer
+	parent: grains
+	html: "Grains"
+	width: Screen.width
+	backgroundColor: "black"
+	height: 100
 
 
-# I'll create three items, and position them in different groups so you can how groups can grow independently but they won't overlap.
-
-
-listItem1 = new Layer
-  width: Screen.width
-  height: 200
-  backgroundColor: Utils.randomColor()
-  html: "Item 1, belongs to group A"
-
-listItem1.onTap -> @destroy()
-
-groupA.addSubLayer listItem1
-
-
-
-
-listItem2 = new Layer
-  width: Screen.width
-  height: 200
-  backgroundColor: Utils.randomColor()
-  html: "Item 2, belongs to group B"
-
-listItem2.onTap -> @destroy()
-
-groupB.addSubLayer listItem2
-
-
-listItem3 = new Layer
-  width: Screen.width
-  height: 200
-  backgroundColor: Utils.randomColor()
-  html: "Item 3, belongs to group A"
-  
-listItem3.onTap -> @destroy()
-
-groupA.addSubLayer listItem3
+for grain in ["Rice", "Barley", "Wheat"]
+	g = new Layer
+		parent: grains
+		width: Screen.width
+		height: 150
+		backgroundColor: Utils.randomColor()
+		html: grain
+	g.onTap -> @destroy()
 ```

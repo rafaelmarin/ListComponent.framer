@@ -11,6 +11,8 @@ It extends ScrollComponent and ScrollComponent.updateContent() methods to render
 Create and setup a ListComponent like you would a ScrollComponent, then just add and remove sublayers to see it working.
 
 ```
+{ListComponent} = require "ListComponent"
+
 myList = new ListComponent
 
 listItem1 = new Layer

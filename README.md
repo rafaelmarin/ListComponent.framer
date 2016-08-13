@@ -2,7 +2,7 @@
 ListComponent is a [Framer](http://github.com/koenbok/Framer) component that helps you easily stack list items inside a [ScrollComponent](http://framerjs.com/docs/#scroll.scrollcomponent).
 
 # How to install
-As with any other module, just drag the file to your Framer project's ```modules/``` folder
+As with any other module, just drag the file to your Framer project's ```modules/``` folder, then import the module in your Framer prototype by adding ```{ListComponent} = require "ListComponent"``` to your source code.
 
 # How it works
 It extends ```ScrollComponent``` and ```ScrollComponent.updateContent()``` methods to render its sublayers in a stack, so everytime a sublayer is added or removed, it will re-render the entire list.

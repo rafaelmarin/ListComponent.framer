@@ -9,3 +9,26 @@ It extends ScrollComponent and ScrollComponent.updateContent() methods to render
 
 # How to use it
 Create and setup a ListComponent like you would a ScrollComponent, then just add and remove sublayers to see it working.
+
+```
+myList = new ListComponent
+
+listItem1 = new Layer
+  width: Screen.width
+  height: 200
+  background: Utils.randomColor()
+
+listItem2 = new Layer
+  width: Screen.width
+  height: 200
+  background: Utils.randomColor()
+
+listItem3 = new Layer
+  width: Screen.width
+  height: 200
+  background: Utils.randomColor()
+  
+myList.addSublayer listItem1
+myList.addSublayer listItem2
+myList.addSublayer listItem3
+```
